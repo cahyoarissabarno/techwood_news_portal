@@ -1,0 +1,376 @@
+html {
+		  scroll-behavior: smooth;
+		}	 
+
+		#myBtn {
+		  display: none;
+		  position: fixed;
+		  bottom: 50px;
+		  right: 30px;
+		  z-index: 99;
+		  font-size: 18px;
+		  border: none;
+		  outline: none;
+		  background-color: black;
+		  color: white;
+		  cursor: pointer;
+		  padding: 15px;
+		  border-radius: 4px;
+		}
+
+		#myBtn:hover {
+		  background: rgba(246, 200, 19, 1.0);
+		}
+		/*Small devices (landscape phones, 576px and up)*/
+		@media (max-width: 320px) {
+			.nav-item{
+				padding: 0px 10px 0px 10px;
+				font-size: 10px;
+			}
+			.title{
+				padding-top: 200px;
+				font-size: 50px;
+			}
+			.top{
+				background-image: url('../assets/banner2.jpg');
+				padding-bottom: 60px;
+				padding-top: 60px;
+				height: 570px;
+			}
+			.name{
+				font-size: 25px;
+			}
+			.lead{
+				font-size: 11px; 
+				border-radius: 10px;
+				padding-left: 10px; 
+				padding-right: 10px;
+			}
+			.tag{
+				margin: -180px 20px 110px;
+				border-radius: 20px;
+				width: 90%;
+			}
+			.artikel{
+				margin-top: -100px;
+				margin-bottom: 110px;
+			}
+			.tag-hp{
+				padding-top: 240px;
+			}
+			.icon{
+				width: 25px; 
+				height: 25px;
+			}
+			.sidetag{
+				font-size: 6px; 
+				border-radius: 20px;
+			}
+			.team{
+				height: 275px;
+			}
+		}
+
+		@media (min-width: 360px) {
+			.nav-item{
+				padding: 5px 15px 5px 15px;
+				font-size: 12px;
+			}
+			.title{
+				padding-top: 180px;
+				font-size: 70px;
+			}
+			.top{
+				background-image: url('../assets/banner2.jpg');
+				padding-bottom: 60px;
+				padding-top: 60px;
+				height: 660px;
+			}
+			.name{
+				margin-left: -21%;
+			}
+			.lead{
+				font-size: 13px; 
+				border-radius: 10px;
+			}
+			.tag{
+				margin: 80px 20px 110px;
+				border-radius: 20px;
+				width: 90%;
+			}
+			.artikel{
+				margin-top: -100px;
+				margin-bottom: 110px;
+			}
+			.tag-hp{
+				margin-top: -75px;
+			}
+			.icon{
+				width: 30px; 
+				height: 30px;
+			}
+			.sidetag{
+				font-size: 9px; 
+				border-radius: 20px;
+			}
+			.team{
+				height: 275px;
+			}
+		}
+
+		@media (min-width: 410px) {
+			.nav-item{
+				padding: 5px 15px 5px 15px;
+				font-size: 15px;
+			}
+			.title{
+				padding-top: 180px;
+				font-size: 70px;
+			}
+			.top{
+				background-image: url('../assets/banner2.jpg');
+				padding-bottom: 60px;
+				padding-top: 150px;
+				height: 730px;
+			}
+			.name{
+				margin-left: -10%;
+			}
+			.lead{
+				font-size: 15px; 
+				border-radius: 30px;
+				padding-left: 15px; 
+				padding-right: 15px;
+			}
+			.tag{
+				margin: -110px 0px 110px 107px;
+				border-radius: 20px;
+				width: 90%;
+			}
+			.artikel{
+				margin-top: -100px;
+				margin-bottom: 110px;
+			}
+			.tag-hp{
+				padding-top: 200px;
+			}
+			.icon{
+				width: 35px; 
+				height: 35px;
+				margin: 0px 5px 0px;
+			}
+			.sidetag{
+				font-size: 6px; 
+				border-radius: 20px;
+			}
+			.team{
+				height: 275px;
+			}
+			
+		}
+
+
+		/*Medium devices (tablets, 768px and up)*/
+		@media (min-width: 768px) {
+			.nav-item{
+				padding: 10px 8px 10px 8px;
+				font-size: 15px;
+			}
+			.name{
+				margin-left: 2%;
+			}
+			.title{
+				padding-top: 180px;
+				font-size: 100px;
+			}
+			.top{
+				background-image: url('../assets/banner2.jpg');
+				padding-bottom: 60px;
+				padding-top: 60px;
+				height: 610px;
+			}
+			.lead{
+				font-size: 16px; 
+				border-radius: 30px;
+				padding-left: 30px; 
+				padding-right: 30px;
+			}
+			.tag{
+				margin: -110px 0px 110px 107px;
+				border-radius: 20px;
+				width: 90%;
+			}
+			.artikel{
+				margin-top: -100px;
+				margin-bottom: 110px;
+			}
+			.icon{
+				width: 35px; 
+				height: 35px;
+				margin: 0px 10px 0px;
+			}
+			.sidetag{
+				font-size: 8px; 
+				border-radius: 20px;
+			}
+			.team{
+				height: 250px;
+			}
+			.card-img{
+				height: 100px;
+			}
+			
+		}
+
+		/*Large devices (desktops, 992px and up)*/
+		@media (min-width: 992px) {
+			.nav-item{
+				padding: 10px 16px 10px 16px;
+				font-size: 17px;
+			}
+			.title{
+				padding-top: 110px;
+				font-size: 110px;
+			}
+			.name{
+				margin-left: 2%;
+			}
+			.top{
+				background-image: url('../assets/banner.jpg');
+				padding-bottom: 60px;
+				padding-top: 60px;
+				height: 610px;
+			}
+			.lead{
+				font-size: 16px; 
+				border-radius: 30px;
+			}
+			.tag{
+				margin: -110px 0px 110px 107px;
+				border-radius: 20px;
+				width: 90%;
+			}
+			.artikel{
+				margin-top: -100px;
+				margin-bottom: 110px;
+			}
+			.icon{
+				width: 45px; 
+				height: 45px;
+				margin: 0px 16px 0px;
+			}
+			.sidetag{
+				font-size: 10px; 
+				border-radius: 20px;
+			}
+			.team{
+				height: 250px;
+			}
+			.card-img{
+				height: 130px;
+			}
+			
+		}
+
+		/*Extra large devices (large desktops, 1200px and up)*/
+		@media (min-width: 1200px) {
+			.nav-item{
+				padding: 10px 20px 10px 20px;
+				font-size: 18px;
+			}
+			.title{
+				padding-top: 110px;
+				font-size: 130px;
+			}
+			.name{
+				margin-left: 2%;
+			}
+			.top{
+				background-image: url('../assets/banner.jpg');
+				padding-bottom: 60px;
+				padding-top: 60px;
+				height: 650px;
+			}
+			.lead{
+				font-size: 18px; 
+				border-radius: 30px;
+			}
+			.tag{
+				margin: -110px 0px 110px 107px;
+				border-radius: 20px;
+				width: 90%;
+			}
+			.artikel{
+				margin-top: -100px;
+				margin-bottom: 110px;
+			}
+			.icon{
+				width: 50px; 
+				height: 50px;
+				margin: 0px 24px 0px;
+			}
+			.sidetag{
+				font-size: 12px; 
+				border-radius: 20px;
+			}
+			.team{
+				height: 250px;
+			}
+			.card-img{
+				height: 150px;
+			}
+		}
+
+		body{
+			background-color: #f5f5f5;
+		}
+
+		nav{
+			margin-top: 1px;
+		}
+
+		.nav-item{
+			transition: 0.3s;
+			text-decoration: none;
+			color: white;
+			border-radius: 20px;
+		}
+		.nav-item:hover{
+			background: rgba(246, 200, 19, 1.0);
+				text-decoration: none;
+				color: black;
+		}
+		.lead:hover{
+			background: rgba(246, 200, 19, 1.0);
+				text-decoration: none;
+				color: black;
+		}
+		.lead2:hover{
+			background: rgba(246, 200, 19, 1.0);
+				text-decoration: none;
+				color: black;
+		}
+		.title{
+			line-height: 80%; 
+			color: #ffffff;
+			font-family: 'Bebas Neue', cursive;
+		}
+		.top{ 
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover; 
+		}
+		img{
+			object-fit: cover; 
+			height: 100%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.main-title{
+			text-decoration: underline;
+			text-decoration-color: #f6c813;
+		}
+		form{
+			border-radius: 30px;
+		}
