@@ -16,15 +16,15 @@
 				</div>
 			    <div class="form-group">
 				    <label for="artikel">Artikel</label>
-				    <textarea  id="artikel" name="artikel"></textarea>
+				    <textarea  id="artikel" name="artikel" style="height:500px;"></textarea>
 			    </div>
 			    <p>Tag</p>
-			    <div class="form-row ml-3 mb-4">
+			    <div class="row ml-3 mb-4">
 				@foreach($tags as $tag)
-				    <div class="col">						
+				    <div class="col-3">						
 				      	<input type="checkbox" class="form-check-input" id="{{ $tag->tag }}" value="{{ $tag->id }}" name="tag[]">
 						<label class="form-check-label ml-4" for="{{ $tag->tag }}">{{ $tag->tag }}</label>
-				    </div>
+					</div>
 				@endforeach
 				  </div>
 				  <div class="form-group">

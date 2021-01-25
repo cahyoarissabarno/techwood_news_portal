@@ -72,11 +72,11 @@
                 </td>
                 <td>{{$article->created_at}}</td>
                 <td>
-                    <a href="{{ route('content-writer.edit', $article->id) }}" class="btn btn-primary">Edit</a>
                     <form action="{{ route('content-writer.destroy', $article->id) }}" method="POST">
                         @csrf
                         <input type="hidden" name="_method" value="DELETE">
-                        <input type="submit" value="Delete" class="btn btn-danger">
+                        <a href="{{ route('content-writer.edit', $article->id) }}" class="btn btn-primary">Edit</a>
+                        <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Yakin Ingin Menghapus Article ini ?')">
                     </form>
                 </td>
                 </tr>

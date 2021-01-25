@@ -71,7 +71,7 @@
                             <form action="{{ route('admin.destroy', $user->id) }}" method="POST">
                                 @csrf
                                 <input type="hidden" name="_method" value="DELETE">
-                                <input type="submit" value="Delete" class="btn btn-danger">
+                                <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Yakin Ingin Menghapus Content Writer ini ?')">
                             </form>
                         </div>
                         <div class="col-2">

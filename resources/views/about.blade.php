@@ -2,9 +2,9 @@
 
 @section('content')
 <!-- navbar -->
-<div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 fixed-top text-light" style="background-color: black;">
+<div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 fixed-top text-light" style="background-color: black; z-index:998;">
     <div class="col-8">
-        <h1 class="name" style="font-family: 'Red Rose', cursive; color: #f6c813;">TECHWOOD</h1>
+        <h1 class="name" style="font-family: 'Red Rose', cursive; color: #f6c813;">CINEMATEC</h1>
     </div>
     <nav>
         <a class="nav-item" href="{{ url('/') }}">HOME</a>
@@ -21,8 +21,8 @@
 		<div class="col">
 			<h1 class="mt-4 text-center main-title"><b>TENTANG KAMI</b></h1><br>
 			<div class="text-justify" style="font-size: 20px;">
-				<p><span class="text-warning"><b>Techwood</b></span> adalah media informasi digital mengenai penggunaan dan perkembangan dunia teknologi yang berperan dalam memajukan industri pembuatan film dunia, khususnya pada perfilman Hollywood.</p><br>
-				<h3>DAFTAR PUSTAKA :</h3>
+				<p><span class="text-warning"><b>Cinematec</b></span> adalah media informasi digital mengenai penggunaan dan perkembangan dunia teknologi yang berperan dalam memajukan industri pembuatan film dunia, khususnya pada perfilman Hollywood yang <u class="main-title">dirangkum dari berbagai sumber</u>.</p><br>
+				<h3>SOURCE :</h3>
 				<hr>
 				<ul>
 					<li>

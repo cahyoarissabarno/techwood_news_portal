@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Tag;
+use App\Article;
 use Illuminate\Support\Facades\Hash;
+use File;
 
 class AdminController extends Controller
 {
@@ -107,6 +110,20 @@ class AdminController extends Controller
         return redirect('admin');
     }
 
+    public function destroyArticle($id)
+    {
+        $article=Article::findOrFail($id);
+
+        $article->tags()->detach();
+        $article->users()->detach();
+
+        File::delete('banner/'.$article->banner);
+
+        $article->delete();
+
+        return redirect('content-writer');
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -115,8 +132,14 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        $tag=User::findOrFail($id);
-        $tag->delete();
+        $user=User::findOrFail($id);
+        $articles = Article::where('id_writer',$id)->get();
+        
+        foreach ($articles as $article) {
+            $this->destroyArticle($article->id);
+        }
+
+        $user->delete();
 
         return redirect('admin');
     }

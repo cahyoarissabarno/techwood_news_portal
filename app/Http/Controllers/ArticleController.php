@@ -9,6 +9,7 @@ use App\Article;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use File;
 
 class ArticleController extends Controller
 {
@@ -120,6 +121,9 @@ class ArticleController extends Controller
             $banner = $request->file('banner');
             $nama_file = time()."_".$slug;
             $direct = 'banner';
+
+            File::delete('banner/'.$article->banner);
+            
             $banner->move($direct,$nama_file);
 
             $artikel_new = [
@@ -154,8 +158,14 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        $tag=Article::findOrFail($id);
-        $tag->delete();
+        $article=Article::findOrFail($id);
+
+        $article->tags()->detach();
+        $article->users()->detach();
+
+        File::delete('banner/'.$article->banner);
+
+        $article->delete();
 
         return redirect('content-writer');
     }

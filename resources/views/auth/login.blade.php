@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card shadow bg-dark text-light">
                 <div class="card-body">
-                <h1 class="text-center mb-md-4" style="font-family: 'Red Rose', cursive; color: #f6c813;">TECHWOOD</h1>
+                <h1 class="text-center mb-md-4" style="font-family: 'Red Rose', cursive; color: #f6c813;">CINEMATEC</h1>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

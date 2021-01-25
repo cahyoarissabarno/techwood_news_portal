@@ -100,6 +100,7 @@ class TagController extends Controller
     public function destroy($id)
     {
         $tag=Tag::findOrFail($id);
+        $tag->articles()->detach();
         $tag->delete();
 
         return redirect('tag');

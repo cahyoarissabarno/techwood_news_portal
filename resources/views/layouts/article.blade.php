@@ -22,7 +22,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 
-    <title>Techwood</title>
+    <title>Cinematec</title>
     <script>
 		$(document).ready(function(){
 		  $("a").on('click', function(event) {
@@ -52,9 +52,9 @@
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 	<!-- navbar -->
-	<div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 fixed-top text-light" style="background-color: black;">
+	<div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 fixed-top text-light" style="background-color: black; z-index:998;">
     	  <div class="col-7">
-    	  	<h1 class="name" style="font-family: 'Red Rose', cursive; color: #f6c813;">TECHWOOD CONTENT WRITER</h1>
+    	  	<h1 class="name" style="font-family: 'Red Rose', cursive; color: #f6c813;">CINEMATEC CONTENT WRITER</h1>
     	  </div>
     	  	<nav>
 			    <a class="nav-item" href="{{ url('/content-writer') }}">Dashboard</a>
@@ -72,17 +72,23 @@
 	</div>
 	
 	<!-- content -->
-    <main class="py-4" style="min-height:600px;">
+    <main class="py-4 d-lg-block d-none" style="min-height:600px;">
         @yield('content')
     </main>
 
+	<div class="jumbotron d-lg-none d-block mx-4" style="margin-top:200px;">
+		<h1 class="display-4">Perhatian !</h1>
+		<hr class="my-4">
+		<p>Halaman Writer hanya bisa dibuka melalui desktop</p>
+	</div>
+
 	  <!-- Site footer -->
-    <footer class="site-footer bg-dark text-light">
+    <footer class="site-footer bg-dark text-light d-lg-block d-none">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-12 col-sm-6 col-xs-12">
           	<hr style="background-color:white;">
-            <p><small>Copyright &copy; 2020 All Rights Reserved by <span class="text-warning">Techwood</span></small>
+            <p><small>Copyright &copy; 2020 All Rights Reserved by <span class="text-warning">Cinematec</span></small>
             </p>
           </div>
         </div>

@@ -32,11 +32,11 @@
                 <th scope="row">{{ $no++ }}</th>
                 <td>{{$t->tag}}</td>
                 <td>
-                    <a href="{{ route('tag.edit', $t->id) }}" class="btn btn-primary">Edit</a>
                     <form action="{{ route('tag.destroy', $t->id) }}" method="POST">
                         @csrf
                         <input type="hidden" name="_method" value="DELETE">
-                        <input type="submit" value="Delete" class="btn btn-danger">
+                        <a href="{{ route('tag.edit', $t->id) }}" class="btn btn-primary">Edit</a>
+                        <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Yakin Ingin Menghapus Tag ini ?')">
                     </form>
                 </td>
                 </tr>

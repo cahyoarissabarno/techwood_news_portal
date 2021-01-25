@@ -49,13 +49,13 @@ class HomeController extends Controller
 
         foreach ($article->users as $user) {
             if ($user->id == $user_id) {
-                return redirect()->back()->with('message','Artikel Ini Pernah Anda Simpan Sebelumnya');
+                return redirect()->back()->with('message','Artikel Ini Pernah Anda Simpan Sebelumnya.');
             }
         }
 
         $article->users()->attach([$user_id]);
 
-        return redirect()->back()->with('message','Artikel Ini Berhasil Disimpan');
+        return redirect()->back()->with('message','Artikel Ini Berhasil Disimpan.');
     }
 
     public function userPage()
