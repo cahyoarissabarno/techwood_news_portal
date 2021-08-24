@@ -4,6 +4,7 @@
     <div class="pt-2 pr-5 pl-5">
         <h1 class="mt-5 pt-3 mb-5 text-center">DASHBOARD</h1>
         <button type="button" class="btn btn-primary shadow ml-5" data-toggle="modal" data-target="#staticBackdrop"> Tambah Akun </button>
+        <span class="ml-3"><i>*Default password content writer baru : password</i></span>
         <form class="form-inline pr-5 mb-3 float-right" method="get" action="{{ url('/admin/cari') }}">
             @csrf
             <input class="form-control mr-sm-2" type="text" name="cari" value="<?php if(isset($_GET['cari'])){ echo $_GET['cari']; } ?>" class="form-control" placeholder="Cari ..">

@@ -4,7 +4,7 @@
 <!-- navbar -->
 <div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 fixed-top text-light" style="background-color: black; z-index:998;">
 	<div class="col-7">
-		<h1 class="name" style="font-family: 'Red Rose', cursive; color: #f6c813;">CINEMATEC</h1>
+		<h1 class="d-flex justify-content-center" style="font-family: 'Red Rose', cursive; color: #f6c813;">CINEMATEC</h1>
 	</div>
 	<nav>
 		<a class="nav-item" href="#article">ARTICLE</a>

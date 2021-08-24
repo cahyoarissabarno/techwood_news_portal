@@ -72,7 +72,7 @@
 	</div>
 	
 	<!-- content -->
-    <main class="py-4 d-lg-block d-none" style="min-height:600px;">
+    <main class="py-4 d-lg-block d-none faded" style="min-height:600px;">
         @yield('content')
     </main>
 

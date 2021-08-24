@@ -53,7 +53,7 @@
 
     <!-- content -->
     
-    <main>
+    <main class="faded">
         @yield('content')
     </main>
 

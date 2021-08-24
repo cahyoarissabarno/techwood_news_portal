@@ -8,7 +8,7 @@
 	  opacity: 1;
 	}
   }
-  main {
+  .faded {
 	opacity: 0;
 	animation: fadeInUp 1s ease-in-out 0s forwards;
 	animation-delay: 1s;
